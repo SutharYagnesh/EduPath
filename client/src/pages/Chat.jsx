@@ -22,8 +22,8 @@ export default function Chat() {
   const messagesEndRef = useRef(null)
   const fileInputRef = useRef(null)
 
-  const API_ML_BASE_URL = "http://localhost:8000"
-  const API_NODE_BASE_URL = "http://localhost:5000"
+  const API_ML_BASE_URL = "https://edu-path-ml.vercel.app"
+  const API_NODE_BASE_URL = "https://edu-path-server.vercel.app"
 
   const navigate = useNavigate();
 
