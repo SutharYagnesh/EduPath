@@ -17,7 +17,7 @@ export default function Register() {
     setError("");
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/auth/signup", form);
+      await axios.post("https://edu-path-server.vercel.app/auth/signup", form);
       navigate("/");
     } catch (err) {
       setError(err.response?.data?.error || "Registration failed");
@@ -27,7 +27,7 @@ export default function Register() {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = 'http://localhost:5000/auth/google';
+    window.location.href = 'https://edu-path-server.vercel.app/auth/google';
   };
 
   return (
